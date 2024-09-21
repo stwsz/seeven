@@ -2,139 +2,152 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
 }
 
-.logo {
-    height: 65px;
-    margin-top: 0;
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#header-div-logo-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.seeven-logo {
+    width: 12rem;
+    transition: 0.4s;
+}
+
+.seeven-logo:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    background-color: black;
-    text-align: center;
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-sizing: border-box;
-    flex-grow: 1;
+    align-items: center;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 25px;
-    background-color: #252525;
-    padding: 8px;
-    border-radius: 13px;
+    gap: 3rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+ul li {
     display: flex;
+    opacity: 0.8;
     align-items: center;
-    gap: 15px;
-    margin-left: 15px;
+    gap: 0.5rem;
+    transition: 0.4s;
 }
 
-/* Pesquisa */
-.pesquisar {
-    position: relative;
-    display: flex;
-    align-items: center;
+ul li:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
 }
 
-.pesquisar input {
-    padding: 8px 40px 8px 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: #444444;
+#checked {
+    opacity: 1;
 }
 
-.pesquisar img {
-    position: absolute;
-    right: 10px;
-    height: 20px;
-    width: 20px;
-}
-
-main {
-    margin-top: 80px;
-}
-
-/* Carrossel */
-.carrossel-cotainer {
-    position: relative;
-    width: 80%;
-    max-width: 900px;
-    overflow: hidden;
-}
-
-.carrossel {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+li a {
+    color: #fff;
     list-style: none;
-    animation: slide 10s infinite;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
 }
 
-.carrossel-item1 {
-    color: white;
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background-image: url(../../../../Downloads/2074c9c3-31fa-48a9-8c13-8b2205dbb2fd_thumb.jpg);
+ul li img {
+    width: 1.2rem;
 }
 
-.carrossel-item2 {
-    color: white;
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background-image: url(../../../../Downloads/5f2f00c0-e070-4854-96ee-547879f52664_thumb.jpg);
+#div-search-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
 }
 
-.carrossel-item3 {
-    color: white;
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    background-image: url(../../../../Downloads/642a0066-8ef1-4021-8f30-6b83ffb19679_thumb.jpg);
+#div-search-input input {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
 }
 
-.carrossel img {
+#div-search-input img {
+    width: 1.3rem;
+    transition: 0.4s;
+}
+
+#div-search-input img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+footer {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #666666;
+    gap: 2.5rem;
+}
+
+footer img {
+    width: 12rem;
+}
+
+footer div:first-child {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
 }
 
-.carrossel-info h1 {
-    font-size: 24px;
-    margin: 10px 0;
+footer div:last-child {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.carrossel-info .detalhes {
-    font-size: 14px;
-    color: #444444;
+footer div:last-child ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.carrossel-info .descricao {
-    font-size: 16px;
-    color: #444444;
+footer div:last-child ul:last-child div {
+    display: flex;
+    gap: 1rem;
+}
+
+footer div:last-child li {
+    font-size: 0.7rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+    font-weight: 450;
 }

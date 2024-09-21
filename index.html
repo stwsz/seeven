@@ -3,39 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Seeven | </title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/logos/logo-seven.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
+    <div id="header-div-logo-nav">
 
-    <a href="./index.html">
-      <img src="" alt="logo" class="logo">
-    </a>
+      <a href="index.html">
+        <img src="./assets/logos/logo-seven.svg" alt="Logo do seeven" class="seeven-logo">
+      </a>
+  
+      <nav>
 
-    <nav>
+        <ul>
+          <li id="checked">
+            <img src="./assets/icons/home-icon.png">
+            <a href="/home/">Home</a>
+          </li>
+          <li>
+            <img src="./assets/icons/movies-icon.png">
+            <a href="/filmes/">Filmes</a>
+          </li>
+          <li>
+            <img src="./assets/icons/series-icon.png">
+            <a href="/series/">Séries</a>
+          </li>
+        </ul>
 
-      <ul>
-        <li>
-          <img src="c:\Users\Direl\Downloads\casa (1).png">
-          <a href="/home/">Home</a>
-        </li>
-        <li>
-          <img src="c:\Users\Direl\Downloads\filme (1).png">
-          <a href="/filmes/">Filmes</a>
-        </li>
-        <li>
-          <img src="c:\Users\Direl\Downloads\tv-retro (1).png">
-          <a href="/series/">Séries</a>
-        </li>
-      </ul>
+      </nav>
 
-    </nav>
+    </div>
 
-    <div class="pesquisar">
+    <div id="div-search-input">
       <input type="search" placeholder="Pesquisar...">
-      <img src="c:\Users\Direl\Downloads\procurar.png" alt="pesquisar">
+
+      <img src="./assets/icons/search-input.png" alt="pesquisar">
     </div>
 
   </header>
@@ -85,7 +93,42 @@
 
     </div>
   </main>
-  <footer></footer>
-</body>
 
+  <footer>
+    <div>
+      <img src="./assets/logos/logo-seven.svg" alt="Logo Seeven no rodapé da página">
+
+      <div>
+        
+        <ul>
+          <h3>Contatos</h3>
+
+          <li>contato@seeven.com</li>
+          <li>suporte@seeven.com</li>
+          <li>(81) 4002-8922</li>
+          <li>Avenida Uniters, 123, Recife, PE</li>
+        </ul>
+
+        <ul>
+          <h3>Redes sociais</h3>
+
+          <div>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./assets/icons/instagram-icon.png" alt="Logo do instagram no rodapé">
+              </a> 
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="./assets/icons/facebook-icon.png" alt="Logo do facebook no rodapé">
+              </a> 
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    
+    <p>&copy; 2024 Seveen | Todos os diritos reservados</p>
+  </footer>
+</body>
 </html>
