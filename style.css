@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.logo {
+    height: 65px;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    background-color: #252525;
+    padding: 8px;
+    border-radius: 13px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+/* Pesquisa */
+.pesquisar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar input {
+    padding: 8px 40px 8px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #444444;
+}
+
+.pesquisar img {
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+/* Carrossel */
+.carrossel-cotainer {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: slide 10s infinite;
+}
+
+.carrossel-item1 {
+    color: white;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../../../../Downloads/2074c9c3-31fa-48a9-8c13-8b2205dbb2fd_thumb.jpg);
+}
+
+.carrossel-item2 {
+    color: white;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../../../../Downloads/5f2f00c0-e070-4854-96ee-547879f52664_thumb.jpg);
+}
+
+.carrossel-item3 {
+    color: white;
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../../../../Downloads/642a0066-8ef1-4021-8f30-6b83ffb19679_thumb.jpg);
+}
+
+.carrossel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carrossel-info h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.carrossel-info .detalhes {
+    font-size: 14px;
+    color: #444444;
+}
+
+.carrossel-info .descricao {
+    font-size: 16px;
+    color: #444444;
+}
