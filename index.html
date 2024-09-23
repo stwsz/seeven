@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeven | </title>
-  <link rel="stylesheet" href="style.css">
+  <title>Seeven | Terror que te prende, medo que não te solta</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="./assets/logos/logo-seven.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -23,16 +24,22 @@
 
         <ul>
           <li id="checked">
-            <img src="./assets/icons/home-icon.png">
-            <a href="/home/">Home</a>
+            <a href="./index.html">
+              <img src="./assets/icons/home-icon.png">
+              <p>Home</p>
+            </a>
           </li>
           <li>
-            <img src="./assets/icons/movies-icon.png">
-            <a href="/filmes/">Filmes</a>
+            <a href="./movies/movies.html"> 
+              <img src="./assets/icons/movies-icon.png">
+              <p>Filmes</p>
+            </a>
           </li>
           <li>
-            <img src="./assets/icons/series-icon.png">
-            <a href="/series/">Séries</a>
+            <a href="./series/series.html">
+              <img src="./assets/icons/series-icon.png">
+              <p>Séries</p>
+            </a>
           </li>
         </ul>
 
@@ -49,49 +56,89 @@
   </header>
 
   <main>
-    <div class="carrossel-container">
-      <ul class="carrossel">
-        <li class="carrossel-item1">
-          <div class="info">
-            <h1>Exorcismos e Demônios</h1>
-            <p class="detlhes"> 2023 | 1h 30min </p>
-            <p class="descricao">"Exorcismos e Demônios" é baseado na história real de um padre sentenciado à prisão
-              após a morte de uma freira em que praticou um exorcismo. Uma jornalista investigativa se esforça para
-              desvendar...</p>
-          </div>
-        </li>
-        <li class="carrossel-item2">
-          <div class="info">
-            <h1>A Semente do Mal</h1>
-            <p class="detlhes"> 2024 | 1h 31min </p>
-            <p class="descricao">"Ao lado de sua namorada (Brigette Lundy-Paine), Edward (Carloto Cotta) decide
-              desvendar os segredos a respeito de sua família biológica, com quem nunca teve contato. No entanto, o que
-              parecia ser uma jornada de descobertas pelo Norte de Portugal rapidamente se transforma em um pesadelo...
-            </p>
-          </div>
-        </li>
-        <li class="carrossel-item3">
-          <div class="info">
-            <h1>A Bruxa dos Mortos - Baghead</h1>
-            <p class="detlhes"> 2024 | 1h 35min </p>
-            <p class="descricao">"Após o falecimento de seu pai, Iris (Freya Allan) herda um antigo bar e se depara com
-              um segredo obscuro: o local abriga uma entidade capaz de incorporar os mortos. Tentada a explorar os
-              poderes da criatura...</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="top">
-      <img src="c:\Users\Direl\Downloads\chama (1).png">
-      <h1>Top 10 hoje</h1>
-      <p>1</p><img src="">
-    </div>
-    <div class="recentesfilmes">
+    <section>
+      <h2>Em destaque</h2>
 
-    </div>
-    <div class="recentesseries">
+      <div id="featured-div">
 
-    </div>
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/excorismo-a-demonios.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>Exorcismos e Demônios</h3>
+
+            <p>2023 | 1h 30min</p>
+            <p>"Exorcismos e Demônios" é baseado na história real de um padre sentenciado à prisão após a morte de uma freira em que praticou um exorcismo. Uma jornalista investigativa se esforça para desvendar...</p>
+          </div>
+        </div>
+
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/a-semente-do-mal.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>A Semente do Mal</h3>
+
+            <p>2024 | 1h 31min</p>
+            <p>"Ao lado de sua namorada (Brigette Lundy-Paine), Edward (Carloto Cotta) decide
+            desvendar os segredos a respeito de sua família biológica, com quem nunca teve contato. No entanto, o que parecia ser uma jornada de descobertas pelo Norte de Portugal rapidamente se transforma em um pesadelo...</p>
+          </div>
+        </div>
+
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/a-bruxa-dos-mortos.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>A Bruxa dos Mortos - Baghead</h3>
+
+            <p>2024 | 1h 35min </p>
+            <p>"Após o falecimento de seu pai, Iris (Freya Allan) herda um antigo bar e se depara com um segredo obscuro: o local abriga uma entidade capaz de incorporar os mortos. Tentada a explorar os poderes da criatura...</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Tendências agora</h2>
+
+      <div id="featured-div">
+
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/fale-comigo.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>Fale Comigo</h3>
+
+            <p>2023 | 1h 35min</p>
+            <p>"Fale Comigo" é um thriller intenso que mergulha no mundo sobrenatural. A trama gira em torno de um grupo de amigos que, após descobrir uma maneira de se comunicar com espíritos, enfrentam consequências aterrorizantes...</p>
+          </div>
+        </div>
+
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/o-exorcismo.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>O Exorcismo</h3>
+
+            <p>2023 | 1h 40min</p>
+            <p>"O Exorcismo" narra a aterrorizante história de um padre que enfrenta forças malignas enquanto tenta salvar uma jovem possuída. Baseado em eventos reais, o filme explora os limites entre o bem e o mal, desafiando a fé e a razão em uma luta desesperada contra o sobrenatural...</p>
+          </div>
+        </div>
+
+        <div class="featured-movie">
+          <img src="./assets/img/images-movies/abigail.jpg" alt="">
+
+          <div class="featured-movie-info">
+            <h3>Abigail</h3>
+
+            <p>2023 | 1h 45min</p>
+            <p>"Abigail" conta a história de uma jovem com poderes sobrenaturais que vive em uma cidade onde a magia é proibida. Quando descobre a verdade sobre sua origem, ela embarca em uma jornada perigosa para salvar seu pai e libertar seu povo, enfrentando forças sombrias que ameaçam destruir tudo o que ela ama...</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -130,5 +177,21 @@
     
     <p>&copy; 2024 Seveen | Todos os diritos reservados</p>
   </footer>
+
+  <section id="modal">
+    <img src="./assets/icons/close-icon.png" id="close-modal" alt="">
+
+    <div>
+      <img id="cover" src="./assets/img/images-movies/o-exorcismo.jpg" alt="">
+
+      <div>
+        <h3>O exorcismo</h3>
+
+        <p>2023 | 1h 40min</p>
+      </div>
+    </div>
+    
+    <p>"O Exorcismo" narra a aterrorizante história de um padre que enfrenta forças malignas enquanto tenta salvar uma jovem possuída. Baseado em eventos reais, o filme explora os limites entre o bem e o mal, desafiando a fé e a razão em uma luta desesperada contra o sobrenatural...</p>
+  </section>
 </body>
 </html>
