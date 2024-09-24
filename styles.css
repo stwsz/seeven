@@ -115,7 +115,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    margin: 2rem 2rem 4rem 2rem;
+    margin: 2rem 0rem 4rem 0rem;
 }
 
 main section {
@@ -137,8 +137,8 @@ h2 {
 
 .featured-movie {
     color: white;
-    min-width: 25rem;
-    max-width: 25rem;
+    min-width: 24rem;
+    max-width: 24rem;
     height: 15rem;
     transition: 0.8s;
     border-radius: 0.5rem;
@@ -230,14 +230,6 @@ footer div:last-child li {
 footer p {
     font-size: 0.7rem;
     font-weight: 450;
-}
-
-#cover {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
 }
 
 #modal {
